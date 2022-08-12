@@ -80,22 +80,11 @@ function datenotice() {
   }
 }
 
-//>图标依次切换乌龟、兔子、闹钟、礼品盒
-function icon_now(num){
-  if(num<=7 && num>3 ){
-    return "calendar"
-  }else if(num<=3 && num>0){
-    return "calendar"
-  }else if(num==0){
-    return "calendar"
-  }else{
-    return "calendar"
-  }
-}
+
 
 $done({
 title:title_random(tnumcount(Number(nowlist))),
-icon:icon_now(tnumcount(Number(nowlist))),
+icon: 'calendar',
 'icon-color': '#FFFFFF',
 content:tlist[nowlist][0]+":"+today(tnumcount(nowlist))+","+tlist[Number(nowlist) + Number(1)][0] +":"+ tnumcount(Number(nowlist) + Number(1))+ "天,"+tlist[Number(nowlist) + Number(2)][0]+":"+tnumcount(Number(nowlist) + Number(2))+"天"
 })
