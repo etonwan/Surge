@@ -19,6 +19,7 @@ $httpClient.get(url, function(error, response, data){
     title: "节点信息",
     content: `IP：${ip}\nISP：${isp}\nLocation：${emoji}${country} - ${city}`,
     icon: "antenna.radiowaves.left.and.right"
+    'icon-color': '#FFFFFF'
   }
   $done(body);
 });
