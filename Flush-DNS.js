@@ -23,7 +23,7 @@
     }
     if ($trigger == "button") await httpAPI("/v1/dns/flush");
     let delay = ((await httpAPI("/v1/test/dns_delay")).delay * 1000).toFixed(0);
-    panel.content = `DNS延迟: ${delay}ms}`;
+    panel.content = `DNS延迟: ${delay}ms`;
     $done(panel);
 })();
 
