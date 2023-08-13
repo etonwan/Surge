@@ -24,7 +24,7 @@ JPY:CNY = ${jpyToCny}
 TRY:CNY = ${tryToCny}
 EUR:CNY = ${eurToCny}
 GBP:CNY = ${gbpToCny}
-Update Time: ${timestamp}`,
+Update Time: ${timestamp}`;
 
   const panel = {
     title: `当前汇率信息`,
