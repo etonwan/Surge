@@ -19,7 +19,7 @@ $httpClient.get(url, function(error, response, data) {
     hour12: false
   });
 
-  const content = `1USD - ${cnyToTry}CNY
+  const content = `1🇺🇸美元 兑换 ${u s}🇹🇷里拉
 🇨🇳1人民币兑换 ${cnyToTry}🇹🇷里拉
 🇨🇳1人民币兑换 ${cnyToHkd}🇭🇰港币
 🇨🇳1人民币兑换 ${cnyToJpy}🇯🇵日元
