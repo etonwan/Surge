@@ -19,13 +19,13 @@ $httpClient.get(url, function(error, response, data) {
     hour12: false
   });
 
-  const content = `1🇺🇸美元 兑换 ${usdToCny}🇨🇳人民币
-🇨🇳1人民币兑换 ${cnyToTry}🇹🇷里拉
-🇨🇳1人民币兑换 ${cnyToHkd}🇭🇰港币
-🇨🇳1人民币兑换 ${cnyToJpy}🇯🇵日元
-🇨🇳1人民币兑换 ${cnyToKrw}🇰🇷韩元
-🇪🇺1欧元兑换 ${eurToCny}🇨🇳人民币
-🇬🇧1英镑兑换 ${gbpToCny}🇨🇳人民币`;
+  const content = `1🇺🇸美元  兑换 ${usdToCny}🇨🇳人民币
+1🇨🇳人民币 兑换 ${cnyToTry}🇹🇷里拉
+1🇨🇳人民币 兑换 ${cnyToHkd}🇭🇰港币
+1🇨🇳人民币 兑换 ${cnyToJpy}🇯🇵日元
+1🇨🇳人民币 兑换 ${cnyToKrw}🇰🇷韩元
+1🇪🇺欧元  兑换 ${eurToCny}🇨🇳人民币
+1🇬🇧英镑  兑换 ${gbpToCny}🇨🇳人民币`;
 
   const panel = {
     title: `当前汇率信息 ${timestamp}`,
