@@ -23,11 +23,10 @@ HKD:CNY = ${hkgToCny}
 JPY:CNY = ${jpyToCny}
 TRY:CNY = ${tryToCny}
 EUR:CNY = ${eurToCny}
-GBP:CNY = ${gbpToCny}
-Update Time: ${timestamp}`;
+GBP:CNY = ${gbpToCny}`;
 
   const panel = {
-    title: `当前汇率信息`,
+    title: `当前汇率信息 ${timestampt}`,
     content: content,
 	        icon: params.icon,
         "icon-color": params.color
