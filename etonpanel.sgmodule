@@ -6,6 +6,7 @@ Timecard = script-name=Timecard,update-interval=3600
 #IP信息
 IP信息=script-name=IP信息
 # 流媒体解锁检测
+youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premium 解锁检测", update-interval=21600
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=21600
 disney_check = script-name=disney_check,title=Disney+ 解锁检测,style=alert,content=请刷新面板,update-interval=21600
 ChatGPT检测 = script-name=ChatGPT检测
@@ -17,6 +18,7 @@ Timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 #ip
 IP信息=type=generic,script-path=https://raw.githubusercontent.com/etonwan/Surge/main/ip-api.js,argument=icon=mappin.circle.fill&color=#ffffff
 # 流媒体解锁检测
+youtube_premium_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js?version=1633074636264,argument=availableIconColor=#ffffff&availableIcon=checkmark.circle.fill&notAvailableIcon=exclamationmark.circle.fill&notAvailableIconColor=#ffffff&errorIcon=xmark.circle.fill&errorIconColor=#ffffff
 nf_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1633074636264,argument=fullIconColor=#ffffff&fullIcon=checkmark.circle.fill&onlyOriginalIconColor=#ffffff&onlyOriginalIcon=info.circle.fill&notAvailableIcon=exclamationmark.circle.fill&notAvailableIconColor=#ffffff&errorIcon=xmark.circle.fill&errorIconColor=#ffffff
 disney_check = type=generic,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js?version=1637153952428,argument=availableIconColor=#ffffff&availableIcon=checkmark.circle.fill&comingIconColor=#ffffff&comingIcon=info.circle.fill&notAvailableIcon=exclamationmark.circle.fill&notAvailableIconColor=#ffffff&errorIcon=xmark.circle.fill&errorIconColor=#ffffff
 ChatGPT检测 = type=generic,script-path=https://raw.githubusercontent.com/deezertidal/Surge_Module/master/files/gpt.js,argument=icon=ellipsis.circle.fill&icon-color=#ffffff
