@@ -7,26 +7,28 @@ $httpClient.get(url, function(error, response, data) {
   }
   const rates = JSON.parse(data).rates;
   const usdToCny = (1 / rates.USD).toFixed(2);
-  const hkdToCny = (1 / rates.HKD).toFixed(2);
-  const jpyToCny = (1 / rates.JPY).toFixed(2);
+  const cnyToTry = rates.TRY.toFixed(2);
+  const cnyToHkd = rates.HKD.toFixed(2);
+  const cnyToJpy = rates.JPY.toFixed(2);
+  const cnyToKrw = rates.KRW.toFixed(2);
   const eurToCny = (1 / rates.EUR).toFixed(2);
   const gbpToCny = (1 / rates.GBP).toFixed(2);
-  const tryToCny = (1 / rates.TRY).toFixed(2);
   const timestamp = new Date().toLocaleTimeString("en-US", {
     hour: "2-digit",
     minute: "2-digit",
     hour12: false
   });
 
-  const content = `USD:CNY = ${usdToCny}
-HKD:CNY = ${hkgToCny}
-JPY:CNY = ${jpyToCny}
-TRY:CNY = ${tryToCny}
-EUR:CNY = ${eurToCny}
-GBP:CNY = ${gbpToCny}`;
+  const content = `🇺🇸1美元兑换 ${usdToCny}🇨🇳人民币
+🇨🇳1人民币兑换 ${cnyToTry}🇹🇷里拉
+🇨🇳1人民币兑换 ${cnyToHkd}🇭🇰港币
+🇨🇳1人民币兑换 ${cnyToJpy}🇯🇵日元
+🇨🇳1人民币兑换 ${cnyToKrw}🇰🇷韩元
+🇪🇺1欧元兑换 ${eurToCny}🇨🇳人民币
+🇬🇧1英镑兑换 ${gbpToCny}🇨🇳人民币`;
 
   const panel = {
-    title: `当前汇率信息 ${timestampt}`,
+    title: `当前汇率信息 ${timestamp}`,
     content: content,
 	        icon: params.icon,
         "icon-color": params.color
