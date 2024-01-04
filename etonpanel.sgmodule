@@ -10,8 +10,8 @@ youtube_premium_check = script-name=youtube_premium_check, title="YouTube Premiu
 nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=21600
 disney_check = script-name=disney_check,title=Disney+ 解锁检测,style=alert,content=请刷新面板,update-interval=21600
 ChatGPT检测 = script-name=ChatGPT检测
-油价=script-name=油价
-当前汇率=script-name=当前汇率
+#油价=script-name=油价
+#当前汇率=script-name=当前汇率
 [Script]
 #时间卡
 #Timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/etonwan/Surge/main/Timecard.js
