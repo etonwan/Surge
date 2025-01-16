@@ -1,5 +1,5 @@
-#!name=Panels - Eton
-#!desc=Eton 信息面板模块
+#!name=Panels
+#!desc=Surge面板模块
 [Panel]
 #时间卡
 #Timecard = script-name=Timecard,update-interval=3600
