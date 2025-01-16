@@ -1,5 +1,5 @@
 #!name=Panels
-#!desc=Surge面板模块
+#!desc=Surge面板集合模块
 [Panel]
 #时间卡
 #Timecard = script-name=Timecard,update-interval=3600
