@@ -86,5 +86,5 @@ fabric.properties
 # Local History for Visual Studio Code
 .history/
 
-# Built Visual Studio Code Extensions
+# Built Visual Studio Code Extension
 *.vsix
