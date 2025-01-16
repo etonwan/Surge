@@ -43,7 +43,7 @@ $httpClient.get(url, function(error, response, data) {
   
   //loc
   let l = tf.indexOf(loc);
-  let gpt = (l !== -1) ? "🟢支持" : "🔴不支持";
+  let gpt = (l !== -1) ? "🟢 支持" : "🔴 不支持";
 
   //warp
   let w = tff.indexOf(warp);
